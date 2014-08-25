@@ -1,0 +1,29 @@
+html {
+	text-align: middle;
+}
+.results {
+	font-family: "Verdana, Geneva, sans-serif"
+}
+.check {
+	margin: 0px;
+	padding-right: 5px;
+	margin-right: 10px;
+}
+#enter {
+	background-color: DarkSlateBlue;
+	font-size: 26px;
+	border-radius: 10px;
+	color: Gold;
+	cursor: pointer;
+}
+#title {
+	color: DarkSlateBlue;
+	font-size: 24px;
+}
+#cont {
+	width: 800px;
+	padding: 5px;
+	text-align: left;
+	margin: 0px;
+	border: 5px ridge DarkSlateBlue;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta name="author" content="John French">
+<body>
+<div id="cont">
+<h1 id="title">Random Sample Generator</h1>
+
+	<strong>Sample days</strong>
+	<input id="sampleDaysButton" type="radio" name="selection" value="days" checked>
+	<br>
+	<strong>Sample weeks</strong>
+	<input id="sampleWeeksButton" type="radio" name="selection" value="days">
+	<br>
+	<span>
+		<label for="start_date">Beginning date of sample period</label>
+		<input id="start_date" type="date" value="2013-01-01">
+	</span>
+	<br>
+	<span>
+		<label for="end_date">End date of sample period</label>
+		<input id="end_date" type="date" value="2014-06-30">
+	</span>
+	<br>
+	<span>
+		<label for="samp_num">Number of samples</label>
+		<input id="samp_num" type="number" value="6">
+	</span>
+	<br>
+	<button id="expand" onclick="expand()"><b>+Expand additional options</b></button>
+	<br>
+<fieldset id="options" style="display: none">
+	<label for="options"><strong>Optional parameters:</strong></label>
+	<br>
+		<label for="cols"># of output columns</label>
+		<input id="cols" type="number" value="1">
+		<br>
+		<label for="holidays">Allow holidays:</label>
+		<input id="holidays" class="check" type="checkbox">
+		<label for="workdays">Allow weekends:</label>
+		<input id="workdays" class="check" type="checkbox">
+		<label for="dupes">Allow duplicates:</label>
+		<input id="dupes" class="check" type="checkbox">
+		<br>
+		<label for="short">Short date format:</label>
+		<input id="shortFormat" type="radio" name="dateFormat" value="short" checked>
+		<label for="long">Long date format:</label>
+		<input id="longFormat" type="radio" name="dateFormat" value="long">
+		<br>
+		<label for="dispWeekdays">Include day of week:</label>
+		<input id="dispWeekdays" class="check" type="checkbox">
+		<label for="delimit">Delimiter:</label>
+		<input id="delimit" type="text" value=", " size="1" maxlength="2">
+	</fieldset>
+	<br>
+	<button id="enter" onclick="onButton()">Pick Random Dates</button>
+	<hr>
+	<div id="results">
+	</div>
+	</div>	
+</body>
+</html>
